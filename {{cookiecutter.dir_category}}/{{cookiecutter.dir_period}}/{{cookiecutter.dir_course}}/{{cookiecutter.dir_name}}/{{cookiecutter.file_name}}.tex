@@ -1,0 +1,15 @@
+\documentclass{report}
+\usepackage[{{cookiecutter.language}}]{babel}
+
+{% if cookiecutter.use_boxes %}\input{boxes.tex}{% endif %}
+{% if cookiecutter.disable_auto_indent %}\setlength{\parindent}{0pt}{% endif %}
+\input{setup.tex}
+
+\begin{document}
+    \coverPage{ {{cookiecutter.department}} }{ {{cookiecutter.course}} }{ {{cookiecutter.title}} }{ {%if cookiecutter.use_subtitles%}{{cookiecutter.subtitle}}{%else%}{%endif%} }{ {{cookiecutter.author}} }{\today}
+    \tableofcontents
+
+    \pagebreak
+    \chapter{ {{cookiecutter.title}} }
+
+\end{document}

@@ -1,0 +1,57 @@
+{
+    "_translation_mapping": {
+        "periods": {
+
+            "Period_I": {
+                "Euclidean_Geometry": {
+                    "english": "Euclidean Geometry",
+                    "spanish": "Geometría Euclidiana"
+                },
+                "Fundamentals": {
+                    "english": "Fundamentals of Mathematics",
+                    "spanish": "Fundamentos de Matemáticas"
+                },
+                "Precalculus": {
+                    "english": "Introduction to Calculus",
+                    "spanish": "Introducción al Cálculo"
+                }
+            },
+            "Period_II": {
+                "Linear_Algebra_I": {
+                    "english": "Linear Algebra I",
+                    "spanish": "Álgebra Lineal I"
+                },
+                "Differential_Calculus": {
+                    "english": "Differential Calculus",
+                    "spanish": "Cálculo Diferencial"
+                },
+                "Discrete_Mathematics": {
+                    "english": "Discrete Mathematics",
+                    "spanish": "Matemática Discreta"
+                }
+            }
+        },
+        "department": {
+            "english": "Mathematics",
+            "spanish": "Matemáticas"
+        }
+    },
+    "language": ["spanish", "english"],
+    "dir_category": ["Works", "Chronicles", "Exercises"],
+    "dir_period": "{{cookiecutter._translation_mapping.periods.keys() | list}}",
+    "dir_course": "{{cookiecutter._translation_mapping.periods[cookiecutter.dir_period].keys() | list}}",
+    "dir_name": "example",
+    "file_name": "example",
+    "department": "{{cookiecutter._translation_mapping.department[cookiecutter.language]}}",
+    "title": "Example",
+    "course": "{{cookiecutter._translation_mapping.periods[cookiecutter.dir_period][cookiecutter.dir_course][cookiecutter.language]}}",
+    "use_subtitles": false,
+    "subtitle?{{cookiecutter.use_subtitles}}": "Subtitle example.",
+    "author": "Alexander Mendoza",
+    "use_boxes": false,
+    "disable_auto_indent": false,
+    "_copy_without_render": [
+        "**/setup.tex",
+        "logo_usa.png"
+    ]
+}
