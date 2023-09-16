@@ -2,14 +2,12 @@
 \usepackage[most,many,breakable]{tcolorbox}
 \usepackage{xcolor}
 
-% Define enumerating
-\newtheorem{theorem}{{%if cookiecutter.language == 'spanish' %}Teorema{% else %}Theorem{% endif %}}[section]
-\newtheorem{axiom}{{%if cookiecutter.language == 'spanish' %}Axioma{% else %}Axiom{% endif %}}[section]
-\newtheorem{lemma}{{%if cookiecutter.language == 'spanish' %}Lema{% else %}Lemma{% endif %}}[section]
-\newtheorem{definition}{{%if cookiecutter.language == 'spanish' %}Definición{% else %}Definition{% endif %}}[section]
-\newtheorem{corollary}{{%if cookiecutter.language == 'spanish' %}Corolario{% else %}Corollary{% endif %}}[theorem]
+\newtheorem{theorem}{%if cookiecutter.language == 'spanish' %}{Teorema}{% else %}{Theorem}{% endif %}[section]
+\newtheorem{axiom}{% if cookiecutter.language == 'spanish' %}{Axioma}{% else %}{Axiom}{% endif %}[section]
+\newtheorem{lemma}{% if cookiecutter.language == 'spanish' %}{Lema}{% else %}{Lemma}{% endif %}[section]
+\newtheorem{definition}{% if cookiecutter.language == 'spanish' %}{Definición}{% else %}{Definition}{% endif %}[section]
+\newtheorem{corollary}{% if cookiecutter.language == 'spanish' %}{Corolario}{% else %}{Corollary}{% endif %}[theorem]
 
-% Define colors
 \definecolor{defBoxBorder}{HTML}{395144}
 \definecolor{thBoxBorder}{HTML}{AC8441}
 \definecolor{noteBoxBorder}{HTML}{4E6C50}
@@ -18,7 +16,6 @@
 \definecolor{lemBoxBorder}{HTML}{B99B6B}
 \definecolor{ideaBoxBorder}{HTML}{272829}
 
-% Define boxes
 \newtcolorbox{defBox}{colback=white,colframe=defBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=\begin{definition}\end{definition}}
 \newtcolorbox{thBox}{colback=white,colframe=thBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=\begin{theorem}\end{theorem}}
 \newtcolorbox{noteBox}{colback=white,colframe=noteBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=Note}
