@@ -2,16 +2,28 @@
 \usepackage[most,many,breakable]{tcolorbox}
 \usepackage{xcolor}
 
+% Define enumerating
+\newtheorem{theorem}{{%if cookiecutter.language == 'spanish' %}Teorema{% else %}Theorem{% endif %}}[section]
+\newtheorem{axiom}{{%if cookiecutter.language == 'spanish' %}Axioma{% else %}Axiom{% endif %}}[section]
+\newtheorem{lemma}{{%if cookiecutter.language == 'spanish' %}Lema{% else %}Lemma{% endif %}}[section]
+\newtheorem{definition}{{%if cookiecutter.language == 'spanish' %}Definición{% else %}Definition{% endif %}}[section]
+\newtheorem{corollary}{{%if cookiecutter.language == 'spanish' %}Corolario{% else %}Corollary{% endif %}}[theorem]
+
+% Define colors
 \definecolor{defBoxBorder}{HTML}{395144}
-\newtcolorbox{defBox}{colback=white,colframe=defBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=Definition}
 \definecolor{thBoxBorder}{HTML}{AC8441}
-\newtcolorbox{thBox}{colback=white,colframe=thBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=Theorem}
 \definecolor{noteBoxBorder}{HTML}{4E6C50}
-\newtcolorbox{noteBox}{colback=white,colframe=noteBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=Note}
 \definecolor{axBoxBorder}{HTML}{AA5656}
-\newtcolorbox{axBox}{colback=white,colframe=axBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=Axiom/Postulate}
 \definecolor{corBoxBorder}{HTML}{8B7E74}
-\newtcolorbox{corBox}{colback=white,colframe=corBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=Corollary}
 \definecolor{lemBoxBorder}{HTML}{B99B6B}
-\newtcolorbox{lemBox}{colback=white,colframe=lemBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=Lemma}
+\definecolor{ideaBoxBorder}{HTML}{272829}
+
+% Define boxes
+\newtcolorbox{defBox}{colback=white,colframe=defBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=\begin{definition}\end{definition}}
+\newtcolorbox{thBox}{colback=white,colframe=thBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=\begin{theorem}\end{theorem}}
+\newtcolorbox{noteBox}{colback=white,colframe=noteBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=Note}
+\newtcolorbox{axBox}{colback=white,colframe=axBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=\begin{axiom}\end{axiom}}
+\newtcolorbox{corBox}{colback=white,colframe=corBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=\begin{corollary}\end{corollary}}
+\newtcolorbox{lemBox}{colback=white,colframe=lemBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=\begin{lemma}\end{lemma}}
+\newtcolorbox{ideaBox}{colback=white,colframe=ideaBoxBorder,arc=3pt, boxrule=0.5pt, drop fuzzy shadow, title=Idea for Proof}
 {% endif %}
