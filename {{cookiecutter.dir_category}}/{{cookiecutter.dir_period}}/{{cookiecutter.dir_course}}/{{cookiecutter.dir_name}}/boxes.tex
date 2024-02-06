@@ -1,13 +1,15 @@
 {%if cookiecutter.use_boxes%}
 \usepackage[most,many,breakable]{tcolorbox}
+\usepackage{ntheorem,lipsum}
 \usepackage{xcolor}
-
+\theorembodyfont{\rm}%
 \newtheorem{theorem}{%if cookiecutter.language == 'spanish' %}{Teorema}{% else %}{Theorem}{% endif %}[section]
-\newtheorem{axiom}{% if cookiecutter.language == 'spanish' %}{Axioma}{% else %}{Axiom}{% endif %}[section]
-\newtheorem{lemma}{% if cookiecutter.language == 'spanish' %}{Lema}{% else %}{Lemma}{% endif %}[section]
-\newtheorem{definition}{% if cookiecutter.language == 'spanish' %}{Definición}{% else %}{Definition}{% endif %}[section]
+\newtheorem{axiom}{% if cookiecutter.language == 'spanish' %}{Axioma}{% else %}{Axiom}{% endif %}[Axiom]
+\newtheorem{lemma}{% if cookiecutter.language == 'spanish' %}{Lema}{% else %}{Lemma}{% endif %}[Lemma]
+\newtheorem{definition}{% if cookiecutter.language == 'spanish' %}{Definición}{% else %}{Definition}{% endif %}[Definition]
 \newtheorem{corollary}{% if cookiecutter.language == 'spanish' %}{Corolario}{% else %}{Corollary}{% endif %}[theorem]
-\newtheorem{figure}{% if cookiecutter.language == 'spanish' %}{Figura}{% else %}{Figure}{% endif %}[section]
+\newtheorem{Figure}{%if cookiecutter.language == 'spanish' %}{Figura}{% else %}{Figure}{% endif %}[Figure]
+\newtheorem{Example}{%if cookiecutter.language == 'spanish' %}{Ejemplo}{% else %}{Example}{% endif %}[Example]
 
 \definecolor{defBoxBorder}{HTML}{395144}
 \definecolor{thBoxBorder}{HTML}{AC8441}

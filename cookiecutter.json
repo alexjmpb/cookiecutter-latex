@@ -1,7 +1,6 @@
 {
     "_translation_mapping": {
         "periods": {
-
             "Period_I": {
                 "Euclidean_Geometry": {
                     "english": "Euclidean Geometry",
@@ -28,6 +27,24 @@
                 "Discrete_Mathematics": {
                     "english": "Discrete Mathematics",
                     "spanish": "Matemática Discreta"
+                }
+            },
+            "Period_III": {
+                "Integral_Calculus_and_Series": {
+                    "english": "Integral Calculus and Series",
+                    "spanish": "Cálculo Integral y Series"
+                },
+                "Scientific_Computation_I": {
+                    "english": "Scientific Computation 1",
+                    "spanish": "Computación Científica 1"
+                },
+                "Number_Theory": {
+                    "english": "Number Theory",
+                    "spanish": "Teoría de Números"
+                },
+                "Linear_Algebra_II": {
+                    "english": "Linear Algebra II",
+                    "spanish": "Álgebra Lineal II"
                 }
             }
         },
