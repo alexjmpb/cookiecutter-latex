@@ -46,6 +46,24 @@
                     "english": "Linear Algebra II",
                     "spanish": "Álgebra Lineal II"
                 }
+            },
+            "Period_IV": {
+                "Scientific_Computation_II": {
+                    "english": "Scientific Computation 2",
+                    "spanish": "Computación Científica 2"
+                },
+                "Probability": {
+                    "english": "Probability",
+                    "spanish": "Probabilidad"
+                },
+                "Multi_variable_Calculus": {
+                    "english": "Multi-variable Calculus",
+                    "spanish": "Cálculo Multivariable"
+                },
+                "Ordinary_Differential_Equations": {
+                    "english": "Ordinary Differential Equations",
+                    "spanish": "Ecuaciones Diferenciales Ordinarias"
+                }
             }
         },
         "department": {
